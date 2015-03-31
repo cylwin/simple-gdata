@@ -19,7 +19,7 @@ module.exports = function (access_token) {
         url += '?alt=json';
       }
     }
-    console.log(url);
+
     client.get(url, function(err, res, body) {
       return callback(err, body);
     });
